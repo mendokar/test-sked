@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+  <section>
+      <div class="table-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Firts Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="table-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr *ngFor=" let USUARIOS of USUARIOS">
+              <td>{{USUARIOS.Id}}</td>
+              <td>{{USUARIOS.Firts_Name}}</td>
+              <td>{{USUARIOS.Last_Name}}</td>
+              <td>{{USUARIOS.Email}}</td>
+            </tr>
+          </tbody>
+            </table>
+        </div>
+  </section>
+  
+</body>
+<footer>
+  <p>Create by Oscar Mendoza</p>
+</footer>
+</html>
